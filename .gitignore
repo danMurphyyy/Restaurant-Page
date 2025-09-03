@@ -1,0 +1,34 @@
+# Node modules (always ignore, huge folder)
+node_modules/
+
+# Build output (Webpack creates this)
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# IDE/editor configs
+.vscode/
+.idea/
+
+# Optional: environment variables
+.env
+.env.local
+.env.*.local
+
+# Cache (Webpack + others)
+.cache/
+.webpack/
+
+# Optional: lock files if you don’t want them tracked
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
