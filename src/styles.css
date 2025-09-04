@@ -1,3 +1,26 @@
 body {
-  background-color: aqua;
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-color: black;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.button-container button {
+  width: 70px;
+  height: 30px;
+  background-color: lightskyblue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
