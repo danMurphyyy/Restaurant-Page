@@ -19,10 +19,50 @@ header {
   z-index: 1000;
 }
 
+/* Hide menu by default on small screens */
 .button-container {
   display: flex;
   gap: 20px;
   padding-left: 20px;
+}
+
+/* Hamburger button styling */
+.hamburger {
+  display: none; /* hide by default on desktop */
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  justify-content: space-between;
+}
+
+.hamburger div {
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .button-container {
+    display: none; /* hide menu initially */
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    position: absolute;
+    top: 60px; /* below header */
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .button-container.show {
+    display: flex; /* show menu when toggled */
+  }
+
+  .hamburger {
+    display: flex; /* show hamburger on mobile */
+  }
 }
 
 .button-container button {
